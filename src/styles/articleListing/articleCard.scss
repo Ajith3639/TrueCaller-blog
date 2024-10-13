@@ -1,0 +1,35 @@
+.articles-wrapper {
+  height: 350px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  margin-top: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  &-category {
+    font-size: 15px;
+    color: #000;
+    margin: 5px;
+    padding: 8px;
+  }
+  &-image {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    min-height: 200px;
+  }
+  &-footer {
+    padding: 15px;
+    padding-top: 0;
+    &-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &-date {
+      color: gray;
+      font-size: smaller;
+    }
+  }
+}
