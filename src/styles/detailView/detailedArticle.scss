@@ -8,6 +8,11 @@
     margin-left: auto;
     margin-right: auto;
     font-family: 'Roboto', sans-serif;
+
+    @media (max-width: 768px) {
+      max-width: 90%;
+      margin: 0 20px;
+    }
   }
   &-avatar {
     display: flex;
