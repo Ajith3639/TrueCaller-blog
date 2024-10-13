@@ -3,6 +3,7 @@ import PageHeader from '@/components/common/PageHeader.vue'
 
 const BlogMain = () => import('@/components/common/BlogMain.vue')
 const DetailedArticle = () => import('@/components/detailView/DetailedArticle.vue')
+const ErrorPage = () => import('@/components/common/ErrorPage.vue')
 
 const routes = [
   {
@@ -19,6 +20,11 @@ const routes = [
         name: 'ArticleDetails',
         component: DetailedArticle,
         props: true
+      },
+      {
+        path: '/:pathMatch(.*)*', // Catch-all route for 404 errors
+        name: 'ErrorPage',
+        component: ErrorPage
       }
     ]
   }

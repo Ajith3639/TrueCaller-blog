@@ -5,6 +5,7 @@
       class="main-header-logo"
       alt="logo"
       @click="routeToLandingPage()"
+      loading="lazy"
     />
   </div>
 

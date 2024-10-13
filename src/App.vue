@@ -25,7 +25,6 @@ export default {
 .wrapper {
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
   min-height: 100vh;
   overflow: hidden;
   position: relative;

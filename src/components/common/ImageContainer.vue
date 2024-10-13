@@ -1,6 +1,6 @@
 <template>
   <div class="image-container">
-    <img :src="imgSrc" class="image-container-home" alt="logo" />
+    <img loading="lazy" :src="imgSrc" class="image-container-home" alt="logo" />
     <div class="overlay"></div>
     <h1 class="image-container-title" v-if="bindingText.length > 0">
       {{ bindingText }}

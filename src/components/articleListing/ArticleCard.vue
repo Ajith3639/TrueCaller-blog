@@ -1,7 +1,7 @@
 <template>
   <div class="articles-wrapper" @click="redirectToDetailsPage()">
     <p class="articles-wrapper-category">{{ category }}</p>
-    <img :src="imageSrc" alt="article_image" class="articles-wrapper-image" />
+    <img loading="lazy" :src="imageSrc" alt="article_image" class="articles-wrapper-image" />
     <span class="articles-wrapper-footer">
       <h3 class="articles-wrapper-footer-title">{{ title }}</h3>
       <p class="articles-wrapper-footer-date">{{ relativeDate }}</p></span

@@ -10,10 +10,10 @@
           <UserAvatar :src="articleDetails?.author?.['avatar_URL']" />
           <span class="detailed-article-avatar-details">
             <label for="name">{{ articleDetails?.author?.['name'] }}</label>
-            <span>{{ relativeDate }}</span></span
+            <span class="detailed-article-avatar-details-date">{{ relativeDate }}</span></span
           >
         </span>
-        <span v-html="articleDetails.content"></span>
+        <span v-html="articleDetails.content" class="article-content"></span>
       </div>
     </div>
   </div>
@@ -25,9 +25,9 @@ import UserAvatar from '../common/Avatar.vue'
 import { formatDate } from '@/utilities/helper.js'
 import Spinner from '../common/Spinner.vue'
 import { getDetailedArticle } from '@/lib/api.js'
-
+import ErrorContainer from '../common/ErrorContainer.vue'
 export default {
-  components: { ImageContainer, UserAvatar, Spinner },
+  components: { ImageContainer, UserAvatar, Spinner, ErrorContainer },
   name: 'DetailedArticle',
   props: {
     slug: {
