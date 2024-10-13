@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ImageContainer imgSrc="../../public/header.jpg" bindingText="The Truecaller Blog" />
+    <ImageContainer imgSrc="../../../public/header.jpg" bindingText="The Truecaller Blog" />
     <ArticlesContainer />
   </div>
 </template>
