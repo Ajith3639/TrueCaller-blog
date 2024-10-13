@@ -22,7 +22,7 @@ const routes = [
         props: true
       },
       {
-        path: '/:pathMatch(.*)*', // Catch-all route for 404 errors
+        path: '/:pathMatch(.*)*',
         name: 'ErrorPage',
         component: ErrorPage
       }
@@ -31,7 +31,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes
 })
 
