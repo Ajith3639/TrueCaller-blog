@@ -50,3 +50,4 @@ The components are built in such a way that they can be reused in multiple place
 
 - The exact font provided in the VD was not identifiable by me, hence it has affected the design accuracy.
 - The total pages available is not specifically available through any of the APIs, so the value from one of the APIs that provides total pages has been used.
+- The content was getting loaded from API for detailed Article page hence detailed styling couldnt be done
